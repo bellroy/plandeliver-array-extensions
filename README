@@ -2,6 +2,6 @@
 -- Array Extensions Plugin
 -----------------------------------------------------------------------
 
-The plugin extends the Array class with the following methods:
+The plugin extends the Array / Hash class with the following methods:
 
 	* to_html_json: Calls to_json and replaces all double with single quotes

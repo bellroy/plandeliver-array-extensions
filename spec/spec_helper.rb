@@ -6,4 +6,3 @@ rescue LoadError
 end
 
 plugin_spec_dir = File.dirname(__FILE__)
-
