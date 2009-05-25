@@ -1,3 +1,3 @@
 module ArrayExtensions
-  def to_html_json; self.to_json.gsub(/"/, '\'') end
+  def to_html_json; ActiveSupport::JSON.encode(self).gsub(/"/, '\'') end
 end
