@@ -16,6 +16,6 @@ module ArrayExtensions
   # adds reverse entries for the combination, only works with pairs
   def combination_plus_reverse
     combs = combination(2)
-    combs + combs.map { |c| c.reverse } 
+    combs.to_a + combs.map { |c| c.reverse } 
   end
 end
