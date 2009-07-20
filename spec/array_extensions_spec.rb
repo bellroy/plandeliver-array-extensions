@@ -11,7 +11,7 @@ describe Array do
       lambda { @array.to_html_json }.should_not raise_error
     end
     
-    it "should call to_json" do
+    it "should encode array with ActiveSupport::JSON" do
       ActiveSupport::JSON.should_receive(:encode).and_return ""
       @array.to_html_json
     end
